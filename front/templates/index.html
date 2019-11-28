@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  </head>
+  <body>
+    <div id="img_container"><img id="img" src="../static/tmp.png"></div>
+    <div style="position: fixed; bottom: 20%; left: 25%; width: 50%; height: 50%;">
+    <textarea id="textbox" class="form-control" placeholder="Type your answer here !" rows="3" style="height: 100%; width: 100%;"></textarea>
+  </div> 
+  <div class="w3-light-grey" id="bar_container" style="left: 25%; position: absolute; bottom: 10%; width: 50%;">
+  <div id="bar" class="w3-container w3-green" style="width:50%">50%</div>
+  </div>
+
+    <script type=text/javascript src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
